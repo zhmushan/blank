@@ -1,0 +1,11 @@
+form[method="dialog"] {
+  width: auto;
+  max-width: 300px;
+  min-width: 288px;
+}
+
+dialog {
+  border: 0;
+  padding: 0 20px;
+  box-shadow: $depth-shadow-64;
+}

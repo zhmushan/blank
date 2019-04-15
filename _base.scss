@@ -1,0 +1,29 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-family;
+  max-width: 66.67vw;
+  margin: 20px auto;
+}
+
+button,
+input,
+label,
+div,
+p,
+span,
+pre,
+code,
+blockquote {
+  color: $color-gray160;
+  font-size: $font-size-14;
+  line-height: 1.5;
+}
+
+label {
+  font-weight: $font-weight-semibold;
+}

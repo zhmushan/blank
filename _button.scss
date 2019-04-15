@@ -1,0 +1,38 @@
+button,
+input[type="button"],
+input[type="submit"] {
+  cursor: pointer;
+  display: flex;
+  padding: 0 16px;
+  min-width: 80px;
+  height: 32px;
+  user-select: none;
+  outline: transparent;
+  border: 1px solid $color-gray110;
+  border-radius: 2px;
+  text-decoration: none;
+
+  &:hover {
+    background-color: $color-gray20;
+    color: $color-gray190;
+  }
+
+  &:active {
+    background-color: $color-gray30;
+    color: $color-gray190;
+  }
+
+  &[color=primary] {
+    background-color: $color-primary;
+    border-color: $color-primary;
+    color: $color-white;
+
+    &:hover {
+      background-color: $color-darkalt;
+    }
+
+    &:active {
+      background-color: $color-dark;
+    }
+  }
+}

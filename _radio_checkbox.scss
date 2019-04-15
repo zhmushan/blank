@@ -1,0 +1,148 @@
+input[type="radio"],
+input[type="checkbox"] {
+  display: none;
+
+  & + label[for] {
+    position: relative;
+    height: 20px;
+    padding-left: 28px;
+    display: flex;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 20px;
+      height: 20px;
+      border: 1px solid $color-gray160;
+    }
+
+    &::after {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  &:not(:disabled) + label[for] {
+    cursor: pointer;
+  }
+}
+
+input[type="checkbox"] {
+  & + label[for] {
+    &::before {
+      transition-property: background-color, border, border-color;
+      transition: $motion-duration-2 $motion-timing-standard;
+      border-radius: 2px;
+    }
+
+    &::after {
+      font-weight: 100;
+      content: "✓";
+      top: 0;
+      left: 0;
+      width: 20px;
+      height: 20px;
+      color: $color-white;
+    }
+  }
+
+  &:not(:checked) + label[for]::after {
+    opacity: 0;
+  }
+
+  &:checked + label[for]::after {
+    opacity: 1;
+  }
+
+  &:checked + label[for]::before {
+    background-color: $color-primary;
+    border-color: $color-primary;
+  }
+
+  &:checked:not(:disabled) + label[for]:hover::before {
+    background-color: $color-dark;
+    border-color: $color-dark;
+  }
+
+  &:not(:checked):not(:disabled) + label[for]:hover::after {
+    opacity: 1;
+    color: $color-gray120;
+  }
+
+  &:disabled + label[for]::before {
+    border-color: $color-gray60;
+    background-color: $color-gray60;
+  }
+
+  &:disabled + label[for] {
+    color: $color-gray90;
+  }
+}
+
+input[type="radio"] {
+  & + label[for] {
+    &::before {
+      border-radius: 50%;
+    }
+
+    &::after {
+      transition: border-width $motion-duration-2 $motion-timing-standard;
+      content: "";
+      width: 10px;
+      height: 10px;
+      left: 5px;
+      right: 0px;
+      top: 5px;
+      border: 5px solid $color-primary;
+      border-radius: 50%;
+      color: $color-primary;
+    }
+  }
+
+  &:not(:checked) + label[for]::after {
+    transition: none;
+    border-width: 0;
+    width: 0px;
+    height: 0px;
+  }
+
+  &:checked + label[for]::before {
+    color: $color-primary;
+    border-color: $color-primary;
+  }
+
+  &:checked:not(:disabled) + label[for]:hover {
+    &::before {
+      border-color: $color-dark;
+    }
+
+    &::after {
+      border-color: $color-dark;
+    }
+  }
+
+  &:not(:checked):not(:disabled) + label[for]:hover {
+    &::after {
+      width: 10px;
+      height: 10px;
+      background-color: $color-gray120;
+    }
+  }
+
+  &:disabled + label[for]::before,
+  &:disabled + label[for]::after {
+    border-color: $color-gray60;
+  }
+
+  &:disabled:checked + label[for]::after {
+    background-color: $color-gray60;
+  }
+
+  &:disabled + label[for] {
+    color: $color-gray90;
+  }
+}

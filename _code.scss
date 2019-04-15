@@ -1,0 +1,11 @@
+code {
+  background-color: $color-gray20;
+  color: $color-gray190;
+  padding: 4px;
+  border-radius: 2px;
+}
+
+pre > code {
+  display: flex;
+  overflow-x: auto;
+}
