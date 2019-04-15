@@ -11,6 +11,8 @@ input[type="submit"] {
   border: 1px solid $color-gray110;
   border-radius: 2px;
   text-decoration: none;
+  background-color: $color-white;
+  justify-content: center;
 
   &:hover {
     background-color: $color-gray20;
