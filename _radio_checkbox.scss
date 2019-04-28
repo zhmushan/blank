@@ -15,7 +15,7 @@ input[type="checkbox"] {
       top: 0;
       width: 20px;
       height: 20px;
-      border: 1px solid $color-gray160;
+      border: 1px solid $radio-checkbox-boder-color;
     }
 
     &::after {
@@ -46,7 +46,7 @@ input[type="checkbox"] {
       left: 0;
       width: 20px;
       height: 20px;
-      color: $color-white;
+      color: $checkbox-color;
     }
   }
 
@@ -70,16 +70,16 @@ input[type="checkbox"] {
 
   &:not(:checked):not(:disabled) + label[for]:hover::after {
     opacity: 1;
-    color: $color-gray120;
+    color: $checkbox-hover-color;
   }
 
   &:disabled + label[for]::before {
-    border-color: $color-gray60;
-    background-color: $color-gray60;
+    border-color: $radio-checkbox-disabled-background-color;
+    background-color: $radio-checkbox-disabled-background-color;
   }
 
   &:disabled + label[for] {
-    color: $color-gray90;
+    color: $radio-checkbox-disabled-color;
   }
 }
 
@@ -129,20 +129,20 @@ input[type="radio"] {
     &::after {
       width: 10px;
       height: 10px;
-      background-color: $color-gray120;
+      background-color: $radio-hover-background-color;
     }
   }
 
   &:disabled + label[for]::before,
   &:disabled + label[for]::after {
-    border-color: $color-gray60;
+    border-color: $radio-checkbox-disabled-background-color;
   }
 
   &:disabled:checked + label[for]::after {
-    background-color: $color-gray60;
+    background-color: $radio-checkbox-disabled-background-color;
   }
 
   &:disabled + label[for] {
-    color: $color-gray90;
+    color: $radio-checkbox-disabled-color;
   }
 }

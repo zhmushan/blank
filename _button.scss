@@ -8,20 +8,20 @@ input[type="submit"] {
   height: 32px;
   user-select: none;
   outline: transparent;
-  border: 1px solid $color-gray110;
+  border: 1px solid $button-border-color;
   border-radius: 2px;
   text-decoration: none;
-  background-color: $color-white;
+  background-color: $button-background-color;
   justify-content: center;
 
   &:hover {
-    background-color: $color-gray20;
-    color: $color-gray190;
+    background-color: $button-hover-background-color;
+    color: $button-hover-active-color;
   }
 
   &:active {
-    background-color: $color-gray30;
-    color: $color-gray190;
+    background-color: $button-active-background-color;
+    color: $button-hover-active-color;
   }
 
   &[color=primary] {

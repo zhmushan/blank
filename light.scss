@@ -1,0 +1,30 @@
+@import "./color";
+
+$base-body-background-color              : $color-white;
+$base-components-color                   : $color-gray160;
+
+$blockquote-boder-left-color             : $color-primary;
+$blockquote-background-color             : $color-gray20;
+
+$button-border-color                     : $color-gray110;
+$button-background-color                 : $color-white;
+$button-hover-background-color           : $color-gray20;
+$button-active-background-color          : $color-gray30;
+$button-hover-active-color               : $color-gray190;
+
+$radio-checkbox-boder-color              : $color-gray160;
+$radio-checkbox-disabled-background-color: $color-gray60;
+$radio-checkbox-disabled-color           : $color-gray90;
+$checkbox-color                          : $color-white;
+$checkbox-hover-color                    : $color-gray120;
+$radio-hover-background-color            : $color-gray120;
+
+$textfiled-color                         : $color-gray190;
+$textfiled-border-color                  : $color-gray80;
+$textfiled-hover-border-color            : $color-gray190;
+$textfiled-disabled-background-color     : $color-gray20;
+
+$code-background-color                   : $color-gray20;
+$code-color                              : $color-gray190;
+
+@import "./core.scss";

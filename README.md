@@ -1,6 +1,6 @@
 ## blank
 
-_This project aims to build a simple website without using CSS and learning additional UI libraries._
+_This project aims to build a simple website without class._
 
 [![tag](https://img.shields.io/github/tag/zhmushan/blank.svg)](https://github.com/zhmushan/blank)
 [![license](https://img.shields.io/github/license/zhmushan/blank.svg)](https://github.com/zhmushan/blank/blob/master/LICENSE)
@@ -13,6 +13,6 @@ _This project aims to build a simple website without using CSS and learning addi
 
 ```html
 ...
-<link rel="stylesheet" href="https://zhmushan.github.io/blank/mod.css" />
+<link rel="stylesheet" href="https://zhmushan.github.io/blank/light.css" />
 ...
 ```

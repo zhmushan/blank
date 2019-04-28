@@ -1,6 +1,6 @@
 input[type="text"] {
-  color: $color-gray190;
-  border: 1px solid $color-gray80;
+  color: $textfiled-color;
+  border: 1px solid $textfiled-border-color;
   border-radius: 2px;
   outline: transparent;
   padding: 0 8px;
@@ -8,7 +8,7 @@ input[type="text"] {
   height: 30px;
 
   &:hover {
-    border-color: $color-gray190;
+    border-color: $textfiled-hover-border-color;
   }
 
   &:focus {
@@ -16,7 +16,7 @@ input[type="text"] {
   }
 
   &:disabled {
-    background-color: $color-gray20;
-    border-color: $color-gray20;
+    background-color: $textfiled-disabled-background-color;
+    border-color: $textfiled-disabled-background-color;
   }
 }
