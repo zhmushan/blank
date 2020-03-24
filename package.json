@@ -1,10 +1,11 @@
 {
   "devDependencies": {
-    "parcel-bundler": "^1.12.3",
-    "sass": "^1.17.4"
+    "parcel-bundler": "^1.12.4",
+    "sass": "^1.26.3"
   },
   "scripts": {
-    "start": "parcel index.html",
-    "build": "parcel build ./light.scss -d . --no-source-maps"
+    "start": "parcel dev.html -p 8080",
+    "build:css": "parcel build ./light.scss -d . --no-source-maps",
+    "build:html": "parcel build index.html --public-url ."
   }
 }
