@@ -4,7 +4,7 @@
     "sass": "^1.26.3"
   },
   "scripts": {
-    "start": "parcel dev.html -p 8080",
+    "start": "parcel index.html -p 8080",
     "build:css": "parcel build ./light.scss -d . --no-source-maps",
     "build:html": "parcel build index.html --public-url ."
   }

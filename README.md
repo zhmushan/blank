@@ -13,6 +13,9 @@ _This project aims to build a simple website without class._
 
 ```html
 ...
-<link rel="stylesheet" href="https://zhmushan.github.io/blank/light.css" />
+<link
+  rel="stylesheet"
+  href="https://raw.githubusercontent.com/zhmushan/blank/master/light.css"
+/>
 ...
 ```
