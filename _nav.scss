@@ -1,0 +1,28 @@
+nav {
+  display: flex;
+  flex-direction: column;
+  width: 208px;
+  height: 100%;
+  overflow-y: auto;
+  user-select: none;
+  border: 1px solid $color-gray20;
+
+  > * {
+    display: inline-flex;
+    width: 100%;
+    min-height: 44px;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+      color: $color-primary;
+      background-color: $color-gray20;
+    }
+
+    &.active {
+      border-left: 2px solid $color-primary;
+      background-color: $color-gray30;
+      font-weight: $font-weight-semibold;
+    }
+  }
+}

@@ -2,7 +2,7 @@ button,
 input[type="button"],
 input[type="submit"] {
   cursor: pointer;
-  display: flex;
+  display: inline-flex;
   padding: 0 16px;
   min-width: 80px;
   height: 32px;

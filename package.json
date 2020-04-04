@@ -5,6 +5,7 @@
   },
   "scripts": {
     "start": "parcel index.html -p 8080",
+    "build": "npm run build:css && npm run build:html",
     "build:css": "parcel build ./light.scss -d . --no-source-maps",
     "build:html": "parcel build index.html --public-url ."
   }

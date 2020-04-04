@@ -16,39 +16,39 @@
 <body>
   <h3>Button</h3>
   <button>Button</button>
-  <br />
+  <br><br>
   <button color="primary">Primary button</button>
-  <br />
+  <br>
 
   <h3>Checkbox</h3>
   <input type="checkbox" id="checkbox1" />
   <label for="checkbox1">Enable, unchecked</label>
-  <br />
+  <br>
   <input type="checkbox" id="checkbox2" checked />
   <label for="checkbox2">Enable, checked</label>
-  <br />
+  <br>
   <input type="checkbox" id="checkbox3" disabled />
   <label for="checkbox3">Disabled, unchecked</label>
-  <br />
+  <br>
   <input type="checkbox" id="checkbox4" disabled checked />
   <label for="checkbox4">Disabled, checked</label>
-  <br />
+  <br>
 
   <h3>ChoiceGroup</h3>
   <h5>Active</h5>
   <input type="radio" id="radio1-a" name="radio1" />
   <label for="radio1-a">Rest</label>
-  <br />
+  <br>
   <input type="radio" id="radio1-b" name="radio1" checked />
   <label for="radio1-b">Selected</label>
-  <br />
+  <br>
   <h5>Disabled</h5>
   <input type="radio" id="radio2-a" name="radio2" disabled />
   <label for="radio2-a">Disabled</label>
-  <br />
+  <br>
   <input type="radio" id="radio2-b" name="radio2" checked disabled />
   <label for="radio2-b">Disabled Selected</label>
-  <br />
+  <br>
 
   <h3>Dialog</h3>
   <button onclick="dialog1.showModal()">Open Dialog</button>
@@ -61,21 +61,21 @@
         &nbsp;
         <button>Cancel</button>
       </div>
-      <br />
+      <br>
     </form>
   </dialog>
-  <br />
+  <br>
 
   <h3>TextField</h3>
   <label for="textfield1">Standard</label>
-  <br />
+  <br>
   <input type="text" id="textfield1" />
-  <br />
+  <br>
   <label for="textfield2">Disabled</label>
-  <br />
+  <br>
   <input type="text" id="textfield2" disabled />
-  <br />
-  <br />
+  <br>
+  <br>
 
   <h3>Code</h3>
   <pre><code>
@@ -83,19 +83,35 @@
   fmt.Println("Hello, World!")
   console.log("Hello, World!")
     </code></pre>
-  <br />
+  <br>
 
   <h3>Blockquote</h3>
   <blockquote>
     I'm a Blockquote.
-    <br />
+    <br>
     I'm a Blockquote.
-    <br />
+    <br>
     I'm a Blockquote.
-    <br />
+    <br>
     I'm a Blockquote.
   </blockquote>
-  <br />
+  <br>
+
+  <h3>Nav</h3>
+  <div style="height: 300px;">
+    <nav>
+      <a href="javascript:;">a</a>
+      <a href="javascript:;" class="active">b</a>
+      <a href="javascript:;">c</a>
+      <a href="javascript:;">d</a>
+      <a href="javascript:;">e</a>
+      <a href="javascript:;">f</a>
+      <a href="javascript:;">g</a>
+      <a href="javascript:;">h</a>
+    </nav>
+  </div>
+
+  <footer style="height: 200px;"></footer>
 </body>
 
 </html>
