@@ -4,15 +4,17 @@ nav {
   width: 208px;
   height: 100%;
   overflow-y: auto;
+  overflow-x: hidden;
   user-select: none;
   border: 1px solid $color-gray20;
 
-  > * {
+  > *, > a {
     display: inline-flex;
     width: 100%;
     min-height: 44px;
-    justify-content: center;
     align-items: center;
+    margin: 0;
+    padding-left: 4px;
 
     &:hover {
       color: $color-primary;
@@ -24,5 +26,14 @@ nav {
       background-color: $color-gray30;
       font-weight: $font-weight-semibold;
     }
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    min-height: 0;
   }
 }
