@@ -13,6 +13,7 @@ input[type="submit"] {
   text-decoration: none;
   background-color: $button-background-color;
   justify-content: center;
+  align-items: center;
 
   &:hover {
     background-color: $button-hover-background-color;
